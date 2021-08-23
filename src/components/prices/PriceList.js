@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import Coin from './Coin';
 
-const ListDisplay = (props) => {
+const PriceList = (props) => {
     const [coins, setCoins] = useState([])
 
     useEffect(() => {
@@ -35,4 +35,4 @@ const ListDisplay = (props) => {
     );
 };
 
-export default ListDisplay;
+export default PriceList;

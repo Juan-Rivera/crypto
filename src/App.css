@@ -1,3 +1,5 @@
+/* global styling */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,3 +20,178 @@ a{
   text-decoration: none;
 }
 
+/* home styling */
+.home{
+  height: calc(100vh - 560px);
+  max-height: 290px;
+  width: 100%;
+  justify-content: center;
+  align-items: center; 
+}
+.home img{
+  margin-bottom: 50px;
+}
+.home-search{
+  background: #fff;
+  display: flex;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  height: 44px;
+  width: 75%;
+  max-width: 584px;
+}
+  .home-search:hover{
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+  }
+
+.home-form{
+  flex: 1;
+  display: flex;
+  padding: 5px 8px 0 16px;
+  padding-left: 14px;
+  align-items: center;
+  background-color: transparent;
+}
+
+.home-input{
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  padding: 0;
+  color: rgba(0,0,0,.87);
+  outline: none;
+  display: flex;
+  flex: 100%;
+  -webkit-tap-highlight-color: transparent;
+  height: 34px;
+  font-size: 16px;
+}
+
+/* SEARCH COMPONENT */
+.search{
+  background: #fff;
+  display: flex;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  height: 44px;
+  width: 75%;
+  max-width: 584px;
+  margin-bottom: 25px;
+}
+  .search:hover{
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+  }
+
+.search-form{
+  flex: 1;
+  display: flex;
+  padding: 5px 8px 0 16px;
+  padding-left: 14px;
+  background-color: transparent;
+}
+
+.search-input{
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: rgba(0,0,0,.87);
+  outline: none;
+  display: flex;
+  flex: 100%;
+  -webkit-tap-highlight-color: transparent;
+  height: 34px;
+  font-size: 16px;
+}
+
+
+/* Prices Styling */
+
+
+.prices {
+  margin-top: 64px;
+  align-items: center;
+} 
+
+  /* TABLE KEY */
+  .prices .key {
+    width: 900px;
+    align-items: center;
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+  }
+    .prices .key .key-name {
+      padding-left: 5px;
+      width: 185px;
+    }
+    .prices .key .key-symbol {
+      width: 165px;
+    }
+    .prices .key .key-price {
+      width: 100px;
+    }
+    .prices .key .key-volume {
+      width: 150px;
+    }
+    .prices .key .key-change {
+      width: 175px;
+    }
+
+    /* COIN CONTAINER */
+    .prices .coin-container {
+      justify-content: center;
+      color: black;
+    }
+      .prices .coin-container .coin-row {
+        justify-content: flex-start;
+        align-items: center;
+        height: 80px;
+        border-bottom: 1px solid black;
+        width: 900px;
+      }
+
+        /* COIN INFO */
+        .prices .coin-container .coin-row .coin-info {
+          align-items: center;
+          padding-right: 24px;
+          min-width: 300px;
+        }
+          .prices .coin-container .coin-row .coin-info .coin-image {
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+          }
+          .prices .coin-container .coin-row .coin-info .coin-name {
+            font-size: 16px;
+            width: 150px;
+          }
+          .prices .coin-container .coin-row .coin-info .coin-symbol {
+            text-transform: uppercase;
+          }
+
+        /* COIN DATA */
+        .prices .coin-container .coin-row .coin-data {
+          text-align: right;
+          justify-content: space-between;
+          width: 100%;
+        }
+          .prices .coin-container .coin-row .coin-data .coin-price {
+            width: 110px;
+          }
+          .prices .coin-container .coin-row .coin-data .coin-volume {
+            width: 155px;
+          }
+          .prices .coin-container .coin-row .coin-data .coin-marketcap {
+            width: 230px;
+          }
+          .prices .coin-container .coin-row .coin-data .coin-percent {
+            width: 100px;
+          }
+          .prices .coin-container .coin-row .coin-data .red {
+            color: #f00606;
+          }
+          .prices .coin-container .coin-row .coin-data .green {
+            color: #11d811;
+          }

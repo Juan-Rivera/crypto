@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import Search from './Search';
-import ListDisplay from './ListDisplay';
-import '../../ctr.css';
+import Search from '../search/Search';
+import PriceList from './PriceList';
+
 const CoinTR = () => {
     const [search, setSearch] = useState('');
     return (
-        <div className="coin-app flex-column">
+        <div className="prices flex-column">
             <Search setSearch={setSearch} search={search} />
-            <ListDisplay search={search}/>
+            <PriceList search={search}/>
         </div>
     );
 };

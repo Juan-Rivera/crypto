@@ -1,12 +1,26 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import './App.css';
-import CoinTR from './components/cryptoTR/CoinTR';
+import Prices from './components/prices/Prices';
+import Home from './components/home/Home';
 
 function App() {
   return (
-    <div className="App">
-      <CoinTR />
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+
+          <Route path='/prices'>
+            <Prices />
+          </Route>
+
+          <Route path='/'>
+            <Home />
+          </Route>
+
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
